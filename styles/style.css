@@ -2,5 +2,143 @@
 
 .page {
   background-image: var(--header-bg-image);
-  background-attachment: fixed;/* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-attachment: fixed;
+  font-family: var(--main-font-family);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--border-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 10px;
+  border: 1px solid var(--decor-color);
+  border-bottom: 0;
+  border-left: 0;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset-block-end: 10px;
+  inset-inline-start: 10px;
+  border: 1px solid var(--decor-color);
+  border-top: 0;
+  border-right: 0;
+  inline-size: 25px;
+  block-size: 25px;
+}
+
+.main-header {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  padding: 10px;
+  min-block-size: 668px;
+  background-image: var(--header-bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title__decore {
+  background-color: var(--accent-color);
+}
+
+.main-header__lamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-header__lamp::before {
+  content: "REC";
+  color: var(--accent-color);
+  font-family: var(--main-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.main-header__lamp::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: end;
+  padding-right: 11px;
+  padding-top: 74px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--text-button-color);
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: var(--content-font-size);
+  line-height: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 0px 13px;
+  width: 70px;
+  height: 26px;
+  gap: 10px;
+}
+
+.main-header__cover {
+  color: var(--title-color);
+  font-family: var(--main-font-family);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.main-header__title {
+  color: var(--text-cover);
+  font-family: var(--main-font-family);
+  font-size: var(--content-font-size);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  background-color: var(--accent-color);
+}
+
+.main-header__text-title {
+  margin-block-end: 10px;
+}
+
+.decorated-zone {
+  position: relative;
 }

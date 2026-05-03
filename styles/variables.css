@@ -3,5 +3,20 @@
   и их переопределение под различные устройства
 */
 :root {
+  --main-font-family: "IBM Plex Mono", sans-serif;
+  --accent-color: #ff0070;
+  --main-color: #000028;
+  --text-color: #f1b2ce;
+  --content-font-size: 18px;
+  --title-color: #db00ff;
+  --text-content-color: #f1b2ce;
+  --text-cover: #000028;
+  --content-title: #ff0070;
+  --decor-color: #ff0070;
+  --decor-content-color: #ff0070;
+  --shadow-color: #ff0070;
+  --button-color: #ff007066;
+  --text-button-color: #ff0070;
+  --border-color: #ff0070;
 --header-bg-image: url(../images/cover-image-dark.png);
 }

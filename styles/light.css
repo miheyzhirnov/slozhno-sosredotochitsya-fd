@@ -5,6 +5,50 @@
 */
 
 :root.theme-light {
+    --accent-color: #ff8dcb;
+  --main-color: #fff1f7;
+  --text-color: #353430;
+  --header-bg-image: url(../images/cover-image-light.png);
+  --title-color: #ffc2e6;
+  --text-content-color: #353430;
+  --text-cover: #353430;
+  --content-title: #353430;
+  --decor-color: #353430;
+  --decor-content-color: #ff8dcb;
+  --shadow-color: #ff0070;
+  --text-button-color: #353430;
+  --button-color: #32312d66;
+  --border-color: #353430;
+  --main-color: #353430;
+}
+
+.theme-light .main-header__lamp {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --main-color: #fff1f7;
+    --text-color: #353430;
+    --header-bg-image: url(../images/cover-image-light.png);
+    --title-color: #ffc2e6;
+    --text-content-color: #353430;
+    --text-cover: #353430;
+    --content-title: #353430;
+    --decor-color: #353430;
+    --decor-content-color: #ff8dcb;
+    --shadow-color: #ff0070;
+    --text-button-color: #353430;
+    --button-color: #32312d66;
+    --border-color: #353430;
+    --main-color: #353430;
+  }
+
+  .main-header__lamp {
+    display: none;
+  }
+}
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
